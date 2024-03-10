@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.main-container {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: #45475a;
+    border-radius: 8px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 60%;
+    margin: 5% 0%;
+}
+h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Mulish";
+    font-style: italic;
+}
+.input {
+    height: 45px;
+    width: 80%;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    margin-left: 40px;
+    padding-left: 15px;
+    font-family: "Roboto";
+}
+.button {
+    background-color: #7f89d1;
+    width: 8rem;
+    border: none;
+    height: 35px;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 40px;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.items-container {
+    width: 82%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listitems {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8892dc;
+    margin: 10px 0px 10px 0px;
+    border-radius: 6px;
+    padding-left: 10px;
+    max-height: 60%;
+    overflow-y: auto;
+    scrollbar-width: 0px;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item {
+    list-style-type: none;
+    color: white;
+    font-weight: 500;
+    font-family: "Mulish";
 }
 
-.App-link {
-  color: #61dafb;
+.delete {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.update {
+    font-weight: 700;
+    color: rgb(246, 249, 249);
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
 }
